@@ -1,18 +1,21 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@layer components{
+@layer  components{
   .mutedHover {
     @apply transition duration-200 hover:text-zinc-400
   }
   .muted {
     @apply text-zinc-400
   }
-  
   .buttonHover {
     @apply hover:bg-zinc-300
   }
 
+}
+
+@layer utilities {
+  
 }
 
 @theme inline {

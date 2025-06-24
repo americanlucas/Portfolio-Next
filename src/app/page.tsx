@@ -1,3 +1,4 @@
+import ContactMe from "@/components/main/contactMe";
 import Description from "@/components/main/description";
 import Projects from "@/components/main/projects";
 import TechStack from "@/components/main/techStack";
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Description />
       <Projects />
       <TechStack/>
+      <ContactMe/>
     </div>
   );
 }

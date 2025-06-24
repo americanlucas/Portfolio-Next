@@ -30,7 +30,7 @@ export default function Project (props: ProjectProps) {
                         <h1 key={index} className="bg-zinc-800 p-2 rounded">{props.tools[index]}</h1>
                     ))}
                 </div>
-                <Link className="flex items-center gap-1 w-fit" href={`${props.url}`}>
+                <Link target="_blank" className="flex items-center gap-1 w-fit" href={`${props.url}`}>
                     <Github size={16}/>
                     <h1>View On GitHub</h1>
                 </Link>
