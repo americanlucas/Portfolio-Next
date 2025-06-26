@@ -18,13 +18,13 @@ export default function ContactMe() {
   return (
     <div className="mb-10">
       <h1 className="text-center text-4xl font-black mb-10">Get In Touch</h1>
-      <div className="min-w-lg">
+      <div className="min-w-xs sm:min-w-[440px] md:min-w-lg">
         <Card className="bg-zinc-900 text-white border-zinc-400">
           <CardHeader className="text-lg font-semibold text-center">
             Contact me for more informations
           </CardHeader>
           <form>
-            <div className="flex flex-col p-6 gap-5">
+            <div className="flex flex-col px-6 gap-5">
               <div className="grid">
                 <Label className="pb-2" htmlFor="name">
                   Name

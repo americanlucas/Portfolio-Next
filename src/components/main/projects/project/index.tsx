@@ -12,20 +12,20 @@ type ProjectProps = {
 
 export default function Project (props: ProjectProps) {
     return(
-        <div className="border-1 rounded overflow-hidden w-[420px]">
-            <div className="h-[300px] overflow-hidden">
+        <div className="border-1 rounded overflow-hidden md:w-[420px]">
+            <div className="h-[300px] w-full overflow-hidden">
                 <Image 
-                    className="w-full"
+                    className="transition duration-300 object-cover w-full hover:scale-102"
                     src={Lukament} 
                     alt="Lukament APP" 
-                    width={200} 
+                    width={400} 
                     height={100}
                     ></Image>
             </div>
             <div className="p-4">
                 <h1 className="text-xl font-semibold">{props.name}</h1>
                 <h1 className="muted">{props.description}</h1>
-                <div className="flex gap-4 py-4">
+                <div className="flex flex-wrap gap-4 py-4">
                     {props.tools.map((tool, index) => (
                         <h1 key={index} className="bg-zinc-800 p-2 rounded">{props.tools[index]}</h1>
                     ))}
